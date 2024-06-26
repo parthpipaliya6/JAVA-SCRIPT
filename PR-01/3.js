@@ -1,3 +1,4 @@
-let institute = 'Red and White \n';
-let slogan = 'A Transformation in Education';
-console.log(institute , slogan);
+let Name = 'Parth';
+let age = 19;
+console.log(Name , age);
+console.log(typeof Name , typeof age);
