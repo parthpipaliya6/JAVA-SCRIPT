@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-EXAM-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+
+
+    <center>
+        <form id="UserData" class="text-center mt-5">
+            <h2 class="bg-dark w-100 text-white fs-1 "> Employe Hire </h2>
+            <input type="text" placeholder="Employee Name" class="w-25 " id="employename"><br>
+            <br>
+            <input type="text" placeholder="Department" id="department" class="w-25" /><br>
+            <br>
+            <input type="number" placeholder="salary" id="salary" class="w-25"><br><br>
+            <input type="number" placeholder="Experiance Year" id="experiance" class="w-25"><br><br>
+            <input type="email" placeholder="Email" id="email" class="w-25"><br><br>
+
+            <input type="submit" id="btn-submit" class="btn btn-dark">
+
+
+        </form>
+
+    </center>
+
+
+    <table class="table  table-dark table-striped  table-hover w-50 mx-auto mt-5 text-center">
+        <thead>
+            <tr>
+                <th scope="col">Sr.No</th>
+                <th scope="col">Employe Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Deaprtment</th>
+                <th scope="col">Experiance Year</th>
+                <th scope="col">Level</th>
+                <th scope="col">Salary</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <center>
+        <h3 id="totalemp"></h3>
+        <h3 id="totalsal"></h3>
+    </center>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
