@@ -33,22 +33,34 @@ const content = () => {
 
 const handleData = (e) => {
     e.preventDefault();
-    let studentName = document.getElementById("studentName").value;
-    let grid = document.getElementById("Grid").value;
-    let course = document.getElementById("course").value;
-    let fee = document.getElementById("fee").value;
-    let number = document.getElementById("number").value;
-
     let user = {
-        studentName: studentName,
-        grid: grid,
-        course: course,
-        fee: fee,
-        number: number,
-    };
+        studentName: document.getElementById("studentName").value,
+        grid: document.getElementById("Grid").value,
+        course: document.getElementById("course").value,
+        fee: document.getElementById("fee").value,
+        number: document.getElementById("number").value
+    }
+
+
+    if (user.studentName.length < 2) {
+        alert('Username should be at least 2 characters long');
+        return;
+    }
+
+    if (user.grid.length < 4) {
+        alert('GRID should be at least 4 characters long');
+        return;
+    }
+
+    if (user.number.length != 10 || !['6', '7', '8', '9'].includes(user.number[0])) {
+        alert('Number should be at least 10 digits long & number start is 8 9 7 6');
+        return;
+    }
+
     users.push(user);
     console.log(user);
     content();
+    content2();
 };
 
 const deleteUser = (index) => {

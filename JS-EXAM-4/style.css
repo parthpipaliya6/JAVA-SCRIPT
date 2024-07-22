@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#studentdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input , select{
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbe3de;
+    
+}
+
+#submit{
+    width: 10%;
+    padding: 5px 10px;
+    background-color: #45cacacf;
+    color: white;
+    border: 1px solid #c3e3e86f;
+    border-radius: 10px;
+    cursor: pointer;
+}
