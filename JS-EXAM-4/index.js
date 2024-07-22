@@ -30,7 +30,28 @@ const content = () => {
         document.getElementById("tbody").append(tr);
     }
 };
+// const content2 = () => {
+//     let deptcount = 0;
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i].course === users[i].totalfees) {
+//             deptcount++;
+//         }
+//     }
 
+//     document.getElementById("tbody2").innerHTML = "";
+//     let tr = document.createElement("tr");
+//     let td1 = document.createElement("td");
+//     td1.innerHTML = users[i].course;
+//     let td2 = document.createElement("td");
+//     td2.innerHTML = deptcount;
+
+//     let td3 = document.createElement("td")
+//     td3.innerHTML = users[i].count;
+//     let td4 = document.createElement("td");
+//     td4.innerHTML = users[i].totalfees;
+//     document.getElementById("tbody2").append(tr);
+//     tr.append(td1, td2, td3, td4);
+// };
 const handleData = (e) => {
     e.preventDefault();
     let user = {
