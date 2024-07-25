@@ -68,17 +68,8 @@ label {
 }
 
 input::placeholder {
-    opacity: 0;
-}
-
-input+label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #71767b;
-    font-size: 18px;
-    pointer-events: none;
-    transition: 200ms ease;
+    opacity: 0.2; 
+    color: #fff;
 }
 
 input:focus {
