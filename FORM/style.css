@@ -13,12 +13,12 @@
     width: 10px;
     top: 33px;
 }
-
 body {
     font-family: Roboto, system-ui, sans-serif;
     background-color: #242d34;
     color: #e7e9ea;
     height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,36 @@ label {
     color: #fff;
 }
 
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
 .container1 {
     max-width: 600px;
     width: 100%;
