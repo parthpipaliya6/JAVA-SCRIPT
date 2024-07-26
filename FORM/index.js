@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             passwordError.textContent = "Password is required.";
             isValid = false;
         } else if (!passwordpattern.test(password)) {
-            passwordError.textContent = "Password must be at least 6 characters long.";
+            passwordError.textContent = "Password must be at least 6 characters long.  special character (e.g., @, #, $)  lowercase letter  uppercase letter";
             isValid = false;
         } else {
             passwordError.textContent = "";
