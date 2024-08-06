@@ -92,18 +92,18 @@ class Book {
     }
   }
   
-  let book1 = new Book("Ramayan", "Valmiki", 700, 200, 25);
+  let mybook = new Book("Ramayan", "Valmiki", 700, 200, 25);
   
-  console.log(book1.buyBook(10));
-  console.log(book1.rentBook(5));
-  console.log(book1.returnBook(5));
-  console.log(book1.checkAvailability());
-  console.log(book1.displayBookInfo());
+  console.log(mybook.buyBook(10));
+  console.log(mybook.rentBook(5));
+  console.log(mybook.returnBook(5));
+  console.log(mybook.checkAvailability());
+  console.log(mybook.displayBookInfo());
   
-  book1.setAuthor("Bhargav");
-  book1.setPrice(400);
-  book1.setRentalPrice(150);
-  book1.setCopiesAvailable(20);
-  book1.setRentedCopies(3);
+  mybook.setAuthor("Bhargav");
+  mybook.setPrice(400);
+  mybook.setRentalPrice(150);
+  mybook.setCopiesAvailable(20);
+  mybook.setRentedCopies(3);
   
-  console.log(book1.displayBookInfo());
+  console.log(mybook.displayBookInfo());
