@@ -1,11 +1,8 @@
-img{
-    height: 525px;
-    width: 1440px;
-    margin-left: 3%;
-    margin-top: 10px;
-    border-radius: 50px;
+img {
+    height: 400px;
 }
-input{
+
+input {
     width: 400px;
     height: 40px;
     margin: 8px;
@@ -17,4 +14,22 @@ section {
     border: 2px solid black;
     height: 300px;
     border-radius: 10px;
+    line-height: 25px;
+}
+
+section img {
+    height: 150px;
+    border: 1px;
+    margin-top: 5px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.benner {
+    height: 525px;
+    width: 1440px;
+    margin-left: 3%;
+    margin-top: 10px;
+    border-radius: 50px;
 }
