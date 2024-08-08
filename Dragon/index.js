@@ -1,73 +1,71 @@
 
-let Array = [];
-
-const del = (index) =>{
-    // document.getElementById("Display").innerHTML = " ";
-    Array.splice(index,1)
-    ui();
+const deleteAll = () => {
+    arr = []
+    document.getElementById("adddata").innerHTML = ""
 }
 
-const buy = () =>{
-    let div3 = alert("Thank's For Shopping..");
-}
+let arr = [];
+const del = (index) => {
+    arr.splice(index, 1);
+    Ui();
+};
+const buy = () => {
+    alert("thankyou for buy..");
+};
+const Ui = () => {
+    document.getElementById("adddata").innerHTML = "";
+    arr.map((ele, i) => {
 
-const ui= () =>{
-    document.getElementById("Display").innerHTML = " ";
+        let section = document.createElement("section");
+        section.setAttribute("class", "col-lg-2 col-sm-5 m-sm-3 m-md-4  ");
 
-    Array.map((ele,i)=>{
-        let Image = document.createElement("img");
-        Image.src = ele.Image;
-        Image.setAttribute("class","uiImage");
-
-        let Title = document.createElement("h4");
-        Title.innerHTML = ele.Title;
-
-        let Price = document.createElement("p");
-        Price.innerHTML = ele.Price;
-
-        let div2 = document.createElement("div");
-        div2.innerHTML = "Delete";
-        div2.addEventListener("click",()=>del(i));
-        div2.setAttribute("id","div2");
-
-        let div3 = document.createElement("div");
-        div3.innerHTML = "Buy";
-        div3.addEventListener("click",()=>buy(i))
-        div3.setAttribute("id","div3");
-
-        let div1 = document.createElement("div");
-        div1.append(div2,div3);
-        div1.setAttribute("id","div1");
+        let img1 = document.createElement("img1");
+        img1.src = ele.img1;
 
         let div = document.createElement("div");
-        div.append(Image,Title,Price,div1);
-        
-        div.setAttribute("class","dis")
+        div.innerHTML = `pname: ${ele.title}`;
+        let div1 = document.createElement("div");
+        div1.innerHTML = `price: ${ele.price}`;
 
-        document.getElementById("Display").append(div);
-        time();
-    })
-}
+        let p = document.createElement("p")
+        p.innerHTML = ele.min
+        let p1 = document.createElement("p")
+        p.innerHTML = ele.sec
+
+        let div3 = document.createElement("div");
+        div3.setAttribute("class", "d-flex justify-content-around");
+
+        let btn = document.createElement("button");
+        btn.innerHTML = "delete";
+        btn.addEventListener("click", () => del(i));
+        btn.setAttribute("class", "bg-danger rounded  border-danger");
+
+        let btn2 = document.createElement("button");
+        btn2.innerHTML = "buynow";
+        btn2.addEventListener("click", () => buy(i));
+        btn2.setAttribute("class", "bg-success rounded  border-success p-2");
 
 
-const handleData = (e) =>{
+        div3.append(btn, btn2);
+        section.append(img1, div, div1, div3);
+
+
+        document.getElementById("adddata").append(section);
+
+    });
+};
+
+const data = (e) => {
     e.preventDefault();
+    let database = {
+        img1: document.getElementById("img1").value,
+        title: document.getElementById("title").value,
+        price: document.getElementById("price").value,
 
-    let Data = {
-        Image : document.getElementById("Image").value,
-        Title : document.getElementById("Title").value,
-        Price : document.getElementById("Price").value,
-    }
+    };
+    arr.push(database);
+    Ui();
 
-    Array.push(Data);
-    ui();
-}
+};
 
-
-
-
-
-document.getElementById("collect").addEventListener("submit",handleData);
-
-
-
+document.getElementById("getdata").addEventListener("submit", data);

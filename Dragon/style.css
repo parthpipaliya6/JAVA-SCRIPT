@@ -1,5 +1,9 @@
 img{
-    height: 400px;
+    height: 525px;
+    width: 1440px;
+    margin-left: 3%;
+    margin-top: 10px;
+    border-radius: 50px;
 }
 input{
     width: 400px;
@@ -8,84 +12,9 @@ input{
     text-align: center;
     border-radius: 8px;
 }
-#collect{
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    margin: 8px;
-    border-radius: 8px;
-    background: #dbdbdb;
 
-}
-/* #Display{
-    height: 200px;
-    width: 100%;
-    border: 1px solid black;
-} */
-.dis{
-    height: max-content; 
-    width: max-content;
-    border: 2px solid rgb(0, 0, 0);
-    margin: 25px;
+section {
+    border: 2px solid black;
+    height: 300px;
     border-radius: 10px;
-    text-align: center;
-    background: #ffffff;
-    /* margin-left: 80px; */
-}
-#perent{
-    display: flex;
-    justify-content: center;
-}
-#Display{
-    /* height: 500px; */
-    width: 100%;
-    background: #e9fffb;
-    /* border: 1px solid black; */
-    /* border-radius: 10px; */
-    /* margin-left: 100px; */
-    display: flex;
-    justify-content: center;
-}
-.uiImage{
-    height: 250px; 
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 250px;
-    margin: 30px;
-}
-#div2,#div3{
-    height: 28px; 
-    width: 45%;
-    margin: 5px;
-    border: transparent;
-    border-radius: 10px;
-
-}
-#div2{
-    background: rgb(178, 76, 76);
-    color: white;
-    font-weight: 700;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#div3{
-    background: rgb(40, 133, 40);
-    color: white;
-    font-weight: 700;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#div1{
-    height: 50px;
-    width: 100%;
-    /* display: flex; */
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-
 }
