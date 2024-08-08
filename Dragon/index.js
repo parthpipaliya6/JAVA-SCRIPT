@@ -39,7 +39,7 @@ const Ui = () => {
       let btn2 = document.createElement("button");
       btn2.innerHTML = "buynow";
       btn2.addEventListener("click", () => buy(i));
-      btn2.setAttribute("class", "bg-primary rounded  border-primary p-2");
+      btn2.setAttribute("class", "bg-success rounded  border-success p-2");
   
      
       div3.append(btn, btn2);
