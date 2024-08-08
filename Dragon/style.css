@@ -19,6 +19,7 @@ section {
 
 section img {
     height: 150px;
+    width: 100%;
     border: 1px;
     margin-top: 5px;
     border-radius: 10px;
